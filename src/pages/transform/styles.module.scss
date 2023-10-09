@@ -1,0 +1,57 @@
+.block{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 12px;
+
+  & div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #535bf2;
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+  }
+
+  & .translate__content:hover{
+    background-color: #646cff;
+    transform: translate(10px, -20px);
+  }
+
+  & .scale__content:hover{
+    background-color: #646cff;
+    transform: scale(2, 2);
+  }
+
+  & .rotate__content:hover{
+    background-color: #646cff;
+    transform: rotate(90deg);
+  }
+
+  & .skew__content:hover{
+    background-color: #646cff;
+    transform: skew(30deg, 20deg);
+  }
+
+  //scaleX, skew1, skew2, scaleY, translateX, translateY
+
+  & .matrix__content:hover{
+    background-color: #646cff;
+    transform: matrix(2, 0, 0, 2, 60, 60);
+  }
+
+  .transformOrigin__content {
+    transform-origin: 0 0;
+  }
+  & .transformOrigin__content:hover{
+    background-color: #646cff;
+
+	transform: rotate(-30deg);
+  }
+
+}
+
+
